@@ -126,6 +126,8 @@ class TaskController {
 
             const count = all.length
 
+            console.log(all)
+
             return {
                 httpStatus: statusCodes.OK,
                 body: {
@@ -135,6 +137,7 @@ class TaskController {
                     data: all,
                 }
             }
+
         } catch (error) {
             throw new Error(error)
         }

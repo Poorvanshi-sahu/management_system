@@ -1,19 +1,18 @@
 const express = require("express")
 const router = express.Router()
 const tasksModule = require("../modules/tasksModule")
+const validationMiddleware = require("../middlewares/validationMiddleware");
 
-router.post("/create", tasksModule.createTask)
+router.post("/create", validationMiddleware.createValidation, tasksModule.createTask)
 
-router.post("/update/:id", tasksModule.updateTask)
+router.post("/update/:id", validationMiddleware.updateTask, tasksModule.updateTask)
 
-router.post("/delete/:id", tasksModule.deleteTask)
+router.post("/delete/:id", validationMiddleware.deleteTask, tasksModule.deleteTask)
 
-router.post("/complete/:id", tasksModule.completeTask)
+router.post("/complete/:id", validationMiddleware.completeTask, tasksModule.completeTask)
 
-router.get("/filter", tasksModule.filterTask);
+router.get("/filter", validationMiddleware.filterTask, tasksModule.filterTask);
 
 router.get("/alltasks", tasksModule.allTasks)
-
-
 
 module.exports = router

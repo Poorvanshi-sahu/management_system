@@ -19,7 +19,6 @@ class TaskModule {
 
     async updateTask(req, res, next) {
         try {
-            console.log("before update")
             const taskId = req.params.id
 
             const updates = req.body
@@ -37,8 +36,6 @@ class TaskModule {
     async deleteTask(req, res, next) {
         try {
             const taskId = req.params.id
-
-            console.log(taskId)
 
             const reqData = { taskId }
 
