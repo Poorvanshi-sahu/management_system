@@ -28,13 +28,14 @@ npm start
 #Design Choices
 
 ```
-- The project follows a layered architecture: Routes handle HTTP requests, Modules manage business logic, Controllers format responses, and Models handle data persistence.
+- The project follows a layered architecture: Routes handle HTTP requests, Modules manage request data and format response, Controllers manages business logic, and Models handle data persistence.
 
-- Validation and error handling are implemented to ensure robust and reliable APIs.
+- Validation and global error handling are implemented to ensure robust and reliable APIs.
 
 - Unit tests cover core logic with database calls mocked for isolation and speed.
 
 - Tasks have clear fields (Title, Description, Due Date, Priority, Status) to enable filtering and maintain consistency.
 
-- The folder structure and naming conventions prioritize readability, maintainability, and scalability.```
+- The folder structure and naming conventions prioritize readability, maintainability, and scalability.
+```
 

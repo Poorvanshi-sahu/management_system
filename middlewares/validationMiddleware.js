@@ -6,6 +6,8 @@ const isValidISODate = require("../utils/date")
 class Validator {
     async createValidation(req, res, next) {
 
+        console.log("aaya yha");
+
         const { title, dueDate } = req.body
 
         if (!title || !dueDate) {
