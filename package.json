@@ -1,0 +1,26 @@
+{
+  "name": "management_system",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Poorvanshi-sahu/management_system#readme",
+  "bugs": {
+    "url": "https://github.com/Poorvanshi-sahu/management_system/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poorvanshi-sahu/management_system.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.0.1",
+    "nodemon": "^3.1.11"
+  }
+}
